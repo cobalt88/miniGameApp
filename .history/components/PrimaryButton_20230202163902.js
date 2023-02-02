@@ -5,7 +5,7 @@ function PrimaryButton({ children }) {
     console.log("pressed the main button");
   }
   return (
-    <Pressable onPress={pressHandler} android_ripple={{ color: "#640233" }}>
+    <Pressable onPress={pressHandler}>
       <View style={styles.buttonContainer}>
         <Text style={styles.buttonText}>{children}</Text>
       </View>
@@ -26,8 +26,6 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 6,
-    width: 100,
-    margin: "auto",
   },
   buttonText: {
     color: "white",

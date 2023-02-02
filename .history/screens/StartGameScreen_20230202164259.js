@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: "row",
-    justifyContent: "space-evenly",
-    width: "100%",
+    justifyContent: "space-between",
+    width: "50%",
   },
 });

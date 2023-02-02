@@ -5,9 +5,9 @@ function PrimaryButton({ children }) {
     console.log("pressed the main button");
   }
   return (
-    <Pressable onPress={pressHandler} android_ripple={{ color: "#640233" }}>
-      <View style={styles.buttonContainer}>
-        <Text style={styles.buttonText}>{children}</Text>
+    <Pressable onPress={pressHandler}>
+      <View>
+        <Text>{children}</Text>
       </View>
     </Pressable>
   );
@@ -16,21 +16,14 @@ function PrimaryButton({ children }) {
 export default PrimaryButton;
 
 const styles = StyleSheet.create({
-  buttonContainer: {
-    backgroundColor: "#72063c",
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 28,
+  button: {
+    backgroundColor: "#ddb52f",
+    padding: 8,
+    borderRadius: 8,
     elevation: 8,
     shadowColor: "black",
     shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 6,
-    width: 100,
-    margin: "auto",
-  },
-  buttonText: {
-    color: "white",
-    textAlign: "center",
   },
 });

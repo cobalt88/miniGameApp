@@ -5,7 +5,7 @@ function PrimaryButton({ children }) {
     console.log("pressed the main button");
   }
   return (
-    <Pressable onPress={pressHandler} android_ripple={{ color: "#640233" }}>
+    <Pressable onPress={pressHandler}>
       <View style={styles.buttonContainer}>
         <Text style={styles.buttonText}>{children}</Text>
       </View>
